@@ -1,0 +1,136 @@
+body {
+    padding: 25px;
+    margin: 0;
+    min-height: 100dvh;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins Light';
+}
+
+.header {
+    font-family: 'Poppins Light';
+    width: clamp(300px, 100%, 600px);
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.header h1 {
+    font-family: 'Poppins';
+    /* font-size: 2.5em; */
+    font-size: clamp(1.7rem, 2vw, 2.5rem);
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    color: hsl(234, 12%, 34%);
+}
+
+.header h2 {
+    /* font-size: 2.5em; */
+    font-size: clamp(1.7rem, 2vw, 2.5rem);
+    font-family: 'Poppins Medium';
+    font-weight: 400;
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+    padding: 0;
+}
+
+.header>span {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+    margin: 10px 15px;
+
+    display: inline-block;
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-block {
+    width: auto;
+    max-width: 380px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px hsl(0, 0%, 67%);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-contents {
+    font-family: 'Poppins';
+    padding: 25px;
+    margin: 0;
+}
+
+.card-block h3 {
+    font-size: 20px;
+    font-family: 'Poppins Medium';
+    color: hsl(234, 12%, 34%);
+    margin: 10px 0;
+}
+
+.card-block span {
+    font-size: 15px;
+    font-family: 'Poppins';
+    color: hsl(229, 6%, 66%);
+    display: inline-block;
+}
+
+.image-container {
+    display: flex;
+    justify-content: end;
+    margin: 30px 0 0 0;
+}
+
+.item-b{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.line-cyan{
+    background-color: hsl(180, 62%, 55%) ;
+    height: 5px;
+
+}
+
+.line-red{
+    background-color: hsl(0, 78%, 62%) ;
+    height: 5px;
+}
+.line-orange{
+    background-color: hsl(34, 97%, 64%);
+    height: 5px;
+}
+.line-blue{
+    background-color: hsl(212, 86%, 64%) ;
+    height: 5px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    display: none;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1170px) { 
+    .content-container{
+        flex-wrap: wrap;
+    }
+    .item-b{
+        flex-direction: row;
+    }
+}
